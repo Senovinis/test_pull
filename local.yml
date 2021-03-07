@@ -7,3 +7,5 @@
   - name: install gimp
     package:
       name: gimp
+
+#tikrinu ar nueis i test_pul git repository
