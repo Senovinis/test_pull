@@ -7,9 +7,9 @@
   - name: install packages
     packages:
       name: 
-      - gimp
-      - tmux
-      - htop
+        - gimp
+        - tmux
+        - htop
       
 
 #tikrinu ar nueis i test_pul git repository
