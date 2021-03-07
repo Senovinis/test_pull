@@ -4,8 +4,12 @@
   become: true
 
   tasks:
-  - name: install gimp
-    package:
-      name: gimp
+  - name: install packages
+    packages:
+      name: 
+      - gimp
+      - tmux
+      - htop
+      
 
 #tikrinu ar nueis i test_pul git repository
