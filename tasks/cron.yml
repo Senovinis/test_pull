@@ -1,0 +1,9 @@
+- name: install cron job (ansible-pull)
+  cron:
+    user: ansible5
+# cia tiesiog task name, taskui, kuris eis kas 10 min
+    name: "ansible provision"
+    minute: "*/10"
+# /usr/bin/ansible-pull yra fully qualified path for the ansible pull binary. -U repository URL - http, o ne ssh. -o liepia ansible-pull veikt tik tada, kai is tikro nurodytoj repository repository yra pokyciu
+# pabaigoj siunciamas output i dev null, kas avoidina any e-mail messages or anything like that, is esmes i niekur, siaip galima i logus siust
+    job: "/usr/bin/ansible-pull -o -U https://github.com/Senovinis/test_pull.git > /dev/null"
